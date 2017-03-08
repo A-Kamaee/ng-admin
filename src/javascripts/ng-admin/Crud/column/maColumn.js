@@ -37,7 +37,7 @@ export default function maColumn($state, $anchorScroll, $compile, Configuration,
             scope.field = scope.field();
             scope.entry = scope.entry();
             scope.value = typeof scope.entry === 'undefined'
-                ? ''
+                ? '---'
                 : (scope.entry.values[scope.field.displayName()] ? scope.entry.values[scope.field.displayName()] : scope.entry.values[scope.field.name()]);
             scope.entity = scope.entity();
             let customTemplate = scope.field.getTemplateValue(scope.entry);
